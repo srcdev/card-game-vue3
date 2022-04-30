@@ -1,0 +1,119 @@
+@mixin baselineSettings($colour, $weight, $height) {
+  color: $colour;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: normal;
+}
+
+.textHero {
+  font-family: "Montserrat-Light", sans-serif;
+  margin: 80px 0;
+  font-size: 40px;
+
+  @include baselineSettings($uiDarkGrey, 300, 1);
+
+  // @include tablet {
+  //   font-size: 80px;
+  // }
+}
+
+.textHeadline {
+  font-family: "Montserrat-Bold", sans-serif;
+  margin: 20px 0;
+  font-size: 30px;
+
+  @include baselineSettings($brandPrimary, bold, 1);
+
+  // @include tablet {
+  //   font-size: 46px;
+  // }
+}
+
+.textSubTitle {
+  font-family: "Montserrat-Light", sans-serif;
+  margin: 20px 0;
+  font-size: 24px;
+
+  @include baselineSettings($brandPrimary, 300, 1);
+
+  // @include tablet {
+  //   font-size: 36px;
+  // }
+}
+
+.textFeatureTitle {
+  font-family: "Montserrat-Light", sans-serif;
+  margin: 20px 0;
+  font-size: 18px;
+
+  @include baselineSettings($brandPrimary, normal, 1.33);
+}
+
+.textSectionTitle {
+  font-family: "Montserrat-Bold", sans-serif;
+  margin: 20px 0;
+  font-size: 24px;
+
+  @include baselineSettings($brandPrimary, bold, 1);
+}
+
+.textSectionSubTitle {
+  font-family: "Montserrat-Bold", sans-serif;
+  margin: 20px 0;
+  font-size: 18px;
+
+  @include baselineSettings($brandPrimary, bold, 1.5);
+}
+
+.textBodyTitle {
+  font-family: "Montserrat-Bold", sans-serif;
+  margin: 20px 0;
+  font-size: 14px;
+
+  @include baselineSettings($brandGrey, bold, 1.5);
+
+  &.error {
+    color: $dangerDark;
+  }
+}
+
+.textBodyCopy {
+  margin: 20px 0;
+  font-size: 14px;
+
+  @include baselineSettings($brandGrey, normal, 1.5);
+}
+
+.textButtonCta {
+  margin: 20px 0;
+  font-size: 14px;
+
+  @include baselineSettings($brandPrimary, normal, 1);
+
+  // @include tablet {
+  //   font-size: 20px;
+  // }
+}
+
+.textBodyHint {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+
+  @include baselineSettings($brandGrey, normal, normal);
+}
+
+.textHero,
+.textHeadline,
+.textSubTitle,
+.textSectionTitle,
+.textSectionSubTitle,
+.textBodyTitle,
+.textBodyCopy,
+.textButtonCta,
+.textBodyHint {
+  &.within-service {
+    color: $brandWhite;
+  }
+}
