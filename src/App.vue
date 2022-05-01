@@ -20,16 +20,11 @@ import Loading from "@/components/base/loading/Loading.vue";
 
 export default defineComponent({
   components: { gameDeck, gameJoin, gameNavigation, Loading },
-  // inheritAttrs: false,
   setup() {
     const rootStore = useRootStore();
     const locale = rootStore.locale;
 
     let currentView = computed(() => rootStore.currentView);
-
-    watch(currentView, (currentValue) => {
-      currentView = currentValue;
-    });
 
     document.querySelector("html")!.setAttribute("lang", locale);
 

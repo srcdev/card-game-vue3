@@ -7,6 +7,10 @@
   color: $input-text-light;
 
   @media (prefers-color-scheme: dark) {
-    color: $input-text-dark;
+    // color: $input-text-dark;
+  }
+
+  &-primary {
+    color: $form-text-error-light;
   }
 }

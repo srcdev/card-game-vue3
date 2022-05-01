@@ -1,0 +1,20 @@
+$spaceamounts: (0, 1, 2, 4, 6, 8, 10, 12, 18, 24, 32, 40);
+$sides: (
+  "": "all",
+  "t": "top",
+  "b": "bottom",
+  "l": "left",
+  "r": "right",
+);
+
+@each $space in $spaceamounts {
+  @each $prefix, $value in $sides {
+    $property: if($prefix == '', '', -#{$value});
+    .m#{$prefix}-#{$space} {
+      margin#{$property}: #{$space}px;
+    }
+    .p#{$prefix}-#{$space} {
+      padding#{$property}: #{$space}px;
+    }
+  }
+}
