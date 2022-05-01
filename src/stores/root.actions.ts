@@ -1,4 +1,7 @@
 export const rootActions = {
+  setCurrentView(this: any, payload: string) {
+    this.currentView = payload;
+  },
   setLocale(this: any, payload: string) {
     this.locale = payload;
   },

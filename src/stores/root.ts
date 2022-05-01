@@ -32,7 +32,7 @@ export const useRootStore = defineStore({
   persist: {
     key: "rootStore",
     storage: window.sessionStorage,
-    paths: ["locale", "validatorLocale"],
+    // paths: ["locale", "validatorLocale"],
     // overwrite: true,
     beforeRestore: (context) => {
       // console.log("Before hydration...");

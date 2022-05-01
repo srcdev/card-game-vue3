@@ -22,7 +22,7 @@ $color-grey-9: #3d3d3d;
 $color-grey-10: #919191;
 
 // Blues
-$color-blue-1: #0570C1;
+$color-blue-1: #0570c1;
 $color-blue-2: #73a9ce;
 $color-blue-3: #f2faff;
 $color-blue-4: #e6f2fa;
@@ -50,14 +50,12 @@ $color-orange-1: #e49600;
 $color-orange-2: #facc62;
 $color-orange-3: #fff5e0;
 
-
 // Theme colours
 $page-bg-light: $white;
 $page-bg-dark: #2e2f30;
 
-$page-bg-light-rgba: rgba(255,255,255,1);
-$page-bg-dark-rgba: rgba(46,47,48,1);
-
+$page-bg-light-rgba: rgba(255, 255, 255, 1);
+$page-bg-dark-rgba: rgba(46, 47, 48, 1);
 
 $base-font-light: $greyGreyText;
 $base-font-dark: #f9f7f7;
@@ -102,7 +100,6 @@ $input-text-disabled-dark: $color-grey-2;
 $input-bg-disabled-dark: $color-grey-1;
 $input-border-disabled-dark: $color-grey-2;
 
-
 $input-border-error-dark: $color-red-6;
 $input-border-valid-dark: $color-green-7;
 
@@ -123,4 +120,3 @@ $card-question-border-light: #929292;
 $card-question-border-dark: #929292;
 $card-question-text-light: $color-grey-5;
 $card-question-text-dark: $color-grey-5;
-

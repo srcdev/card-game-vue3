@@ -1,7 +1,8 @@
 import { createApp } from "vue";
 import App from "@/App.vue";
 import camelize from "@/helpers/camelize";
-import i18n from "@/createI18n";
+import { createI18n } from "vue-i18n";
+import message from "@/locales/index";
 import { createPinia } from "pinia";
 import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
 
@@ -10,4 +11,10 @@ pinia.use(piniaPluginPersistedstate);
 
 import "@/assets/styles/main.scss";
 
-createApp(App).use(i18n).use(pinia).mount('#game-app');
+const i18n = createI18n({
+  locale: "en-GB",
+  fallbackLocale: "en-GB",
+  messages: message,
+});
+
+createApp(App).use(i18n).use(pinia).mount("#game-app");

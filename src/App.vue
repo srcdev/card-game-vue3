@@ -1,7 +1,8 @@
 <template>
+  <gameNavigation></gameNavigation>
   <suspense>
     <template #default>
-      <component :is="dynamicComponent"></component>
+      <component :is="currentView"></component>
     </template>
     <template #fallback>
       <Loading :no-opacity="true"></Loading>
@@ -10,26 +11,30 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, defineAsyncComponent, ref } from "vue";
+import { computed, defineComponent, defineAsyncComponent, ref, watch } from "vue";
+import gameDeck from "@/views/gameDeck.vue";
+import gameJoin from "@/views/gameJoin.vue";
+import gameNavigation from "@/components/base/navigation/gameNavigation.vue";
 import { useRootStore } from "@/stores/root";
-import { TRootState } from "@/models/store.root";
 import Loading from "@/components/base/loading/Loading.vue";
 
 export default defineComponent({
-  components: { Loading },
-  inheritAttrs: false,
+  components: { gameDeck, gameJoin, gameNavigation, Loading },
+  // inheritAttrs: false,
   setup() {
-    const rootStore = useRootStore() as unknown as TRootState;
+    const rootStore = useRootStore();
     const locale = rootStore.locale;
 
-    const currentView = ref(rootStore.currentView);
+    let currentView = computed(() => rootStore.currentView);
 
-    const dynamicComponent: any = defineAsyncComponent(() => import(`./views/${currentView.value}.vue`));
+    watch(currentView, (currentValue) => {
+      currentView = currentValue;
+    });
 
     document.querySelector("html")!.setAttribute("lang", locale);
 
     return {
-      dynamicComponent,
+      currentView,
     };
   },
 });

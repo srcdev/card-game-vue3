@@ -1,0 +1,12 @@
+@import "@/assets/styles/variables/_colours";
+
+.btn {
+  background-color: $input-bg-light;
+  box-shadow: 0 0 0 1px currentcolor;
+  border: none;
+  color: $input-text-light;
+
+  @media (prefers-color-scheme: dark) {
+    color: $input-text-dark;
+  }
+}

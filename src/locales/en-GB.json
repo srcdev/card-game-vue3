@@ -1,3 +1,8 @@
 {
-  "websiteTitle": "Fill In The Blanks Card Game"
+  "websiteTitle": "Fill In The Blanks Card Game",
+  "joinGameTitle": "Join Game",
+  "joinGameExplainer": "Before you joiong the game, please enter a name for the others to know who's playing",
+  "joinGameFormNameLabel": "Your name",
+  "joinGameFormNamePlaceholder": "eg: Norbert",
+  "joinGameFormSubmit": "Join game"
 }

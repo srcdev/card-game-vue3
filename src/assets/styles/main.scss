@@ -3,13 +3,13 @@
 @import "@/assets/styles/mixins/_breakpoints";
 @import '@/assets/styles/partials/_theme_colours';
 @import '@/assets/styles/partials/_theme_fonts';
+@import '@/assets/styles/partials/_theme_buttons';
 @import '@/assets/styles/ui/_icons';
 @import '@/assets/styles/ui/_scaffolding';
 
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
 }
 
 body {

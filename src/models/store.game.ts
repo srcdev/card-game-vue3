@@ -44,3 +44,7 @@ export interface IGameQuestionsDTO {
   status: number;
   statusText: string;
 }
+
+export type IFormDataJoinGame = {
+  name?: string | undefined;
+};
