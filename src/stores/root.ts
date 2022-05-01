@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import { rootActions } from "../stores/root.actions";
+import { TRootState } from "@/models/store.root";
 
 const localesList = [
   {
@@ -21,7 +22,7 @@ const localesList = [
 
 export const useRootStore = defineStore({
   id: "root",
-  state: () => ({
+  state: (): TRootState => ({
     currentView: "gameDeck",
     localesList: localesList,
     locale: "en-GB",
@@ -31,8 +32,8 @@ export const useRootStore = defineStore({
   persist: {
     key: "rootStore",
     storage: window.sessionStorage,
-    // paths: ["locale", "validatorLocale"],
-    overwrite: true,
+    paths: ["locale", "validatorLocale"],
+    // overwrite: true,
     beforeRestore: (context) => {
       // console.log("Before hydration...");
     },

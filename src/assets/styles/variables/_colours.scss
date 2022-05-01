@@ -1,0 +1,126 @@
+// _variables.scss
+
+$white: #fff;
+$black: #000;
+$darkGrey: #555;
+$greyGreyText: #313131;
+
+/*
+* Main colour scheme
+**/
+
+$color-white: #fff;
+$color-grey-1: #333333;
+$color-grey-2: #666666;
+$color-grey-3: #767676;
+$color-grey-4: #cccccc;
+$color-grey-5: #f3f3f3;
+$color-grey-6: #bababa;
+$color-grey-7: #9d9d9d;
+$color-grey-8: #191919;
+$color-grey-9: #3d3d3d;
+$color-grey-10: #919191;
+
+// Blues
+$color-blue-1: #0570C1;
+$color-blue-2: #73a9ce;
+$color-blue-3: #f2faff;
+$color-blue-4: #e6f2fa;
+$color-blue-5: #3470c0;
+
+// Greens
+$color-green-1: #2c8901;
+$color-green-2: #6bac48;
+$color-green-3: #d2e6e1;
+$color-green-4: #eafce1;
+$color-green-5: #388d0f;
+$color-green-6: #2c8800;
+$color-green-7: #55fd08;
+
+// Reds
+$color-red-1: #e50f0f;
+$color-red-2: #d21c29;
+$color-red-3: #ec7676;
+$color-red-4: #fce7e7;
+$color-red-5: #c50000;
+$color-red-6: #ff1010;
+
+// Oranges
+$color-orange-1: #e49600;
+$color-orange-2: #facc62;
+$color-orange-3: #fff5e0;
+
+
+// Theme colours
+$page-bg-light: $white;
+$page-bg-dark: #2e2f30;
+
+$page-bg-light-rgba: rgba(255,255,255,1);
+$page-bg-dark-rgba: rgba(46,47,48,1);
+
+
+$base-font-light: $greyGreyText;
+$base-font-dark: #f9f7f7;
+$border-light: $greyGreyText;
+$border-dark: #f9f7f7;
+
+/*
+* Form colours
+**/
+
+$btn-bg-error-dark: #271f1f;
+
+$input-text-light: $greyGreyText;
+$input-label-light: $greyGreyText;
+$input-label-error-light: $color-red-2;
+$input-placeholder-light: #a2a2a2;
+$input-placeholder-error-light: $black;
+$input-bg-light: $white;
+$input-radio-light: #a2a2a2;
+$input-radio-bg-light: $color-green-2;
+$input-bg-error-light: $color-red-4;
+$input-border-light: $greyGreyText;
+$input-border-error-light: $color-red-6;
+$input-border-valid-light: $color-green-1;
+
+$input-text-disabled-light: $color-grey-4;
+$input-bg-disabled-light: $white;
+$input-border-disabled-light: $color-grey-4;
+
+$input-text-dark: $white;
+$input-label-dark: #d2d0d0;
+$input-label-error-dark: $color-red-6;
+$input-placeholder-dark: #a2a2a2;
+$input-placeholder-error-dark: $black;
+$input-bg-dark: #525050;
+$input-radio-dark: $white;
+$input-radio-bg-dark: $color-green-2;
+$input-bg-error-dark: $color-red-6;
+$input-border-dark: #f9f7f7;
+
+$input-text-disabled-dark: $color-grey-2;
+$input-bg-disabled-dark: $color-grey-1;
+$input-border-disabled-dark: $color-grey-2;
+
+
+$input-border-error-dark: $color-red-6;
+$input-border-valid-dark: $color-green-7;
+
+/*
+* Deck colours
+**/
+
+$card-answer-bg-light: #e4e4e4;
+$card-answer-bg-dark: #e4e4e4;
+$card-answer-border-light: $black;
+$card-answer-border-dark: $black;
+$card-answer-text-light: $black;
+$card-answer-text-dark: $black;
+
+$card-question-bg-light: $black;
+$card-question-bg-dark: $black;
+$card-question-border-light: #929292;
+$card-question-border-dark: #929292;
+$card-question-text-light: $color-grey-5;
+$card-question-text-dark: $color-grey-5;
+

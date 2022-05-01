@@ -1,0 +1,148 @@
+.icon {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 10px;
+  border: 0;
+  display: inline-block;
+  height: 20px;
+  overflow: hidden;
+  padding: 0;
+  width: 20px;
+
+  svg {
+    height: 100%;
+    width: 100%;
+    path,
+    circle,
+    rect {
+      fill: $color-grey-9;
+      @media (prefers-color-scheme: dark) {
+        fill: $color-grey-5;
+      }
+    }
+  }
+
+  &__cancel {
+    height: 18px;
+    width: 18px;
+
+    svg path {
+      fill: $input-label-error-light;
+      @media (prefers-color-scheme: dark) {
+        fill: $input-label-error-dark;
+      }
+    }
+  }
+
+  &__tick {
+    height: 16px;
+    width: 16px;
+
+    svg path {
+      fill: $color-green-6;
+      @media (prefers-color-scheme: dark) {
+        fill: $color-green-7;
+      }
+    }
+  }
+
+  &__close {
+    height: 14px;
+    width: 14px;
+  }
+
+  &__cross {
+    height: 18px;
+    width: 18px;
+
+    svg path {
+      fill: $input-label-error-light;
+      @media (prefers-color-scheme: dark) {
+        fill: $input-label-error-dark;
+      }
+    }
+  }
+
+  &__locked {
+    height: 18px;
+    width: 18px;
+  }
+
+  &__hamburger {
+    height: 18px;
+    width: 18px;
+  }
+
+  &__refresh {
+    height: 20px;
+    width: 20px;
+
+    svg path {
+      @media (prefers-color-scheme: dark) {
+        fill: $color-grey-1;
+      }
+    }
+  }
+
+  &__cog {
+    height: 18px;
+    width: 18px;
+  }
+
+  &__question {
+    height: 18px;
+    width: 18px;
+  }
+
+  &__info {
+    height: 22px;
+    width: 22px;
+  }
+
+  &__share {
+    height: 22px;
+    width: 22px;
+  }
+
+  &__home {
+    height: 22px;
+    width: 22px;
+  }
+
+  &__profile {
+    height: 22px;
+    width: 22px;
+  }
+
+  &__cards {
+    height: 22px;
+    width: 22px;
+  }
+
+  &__eject {
+    height: 22px;
+    width: 22px;
+  }
+
+  &__warning {
+    height: 22px;
+    width: 22px;
+
+    svg {
+      circle,
+      path,
+      rect {
+        fill: $input-label-error-light;
+        @media (prefers-color-scheme: dark) {
+          fill: $input-label-error-dark;
+        }
+      }
+    }
+  }
+
+  &__scores {
+    height: 22px;
+    width: 33px;
+  }
+}

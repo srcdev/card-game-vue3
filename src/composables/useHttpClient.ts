@@ -1,9 +1,9 @@
 import axios from "axios";
-import { useRootStore } from "@/stores/root";
-const rootStore = useRootStore();
-const baseUrl = rootStore.baseUrl;
+// import { useRootStore } from "@/stores/root";
+// const rootStore = useRootStore();
+// const baseUrl = rootStore.baseUrl;
 
-// const baseUrl = import.meta.env.VITE_APP_BASE_URL;
+const baseUrl = import.meta.env.VITE_APP_BASE_URL;
 
 const httpOptions = {
   baseURL: `${baseUrl}`,

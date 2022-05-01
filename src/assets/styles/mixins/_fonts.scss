@@ -1,0 +1,23 @@
+
+
+// Fonts
+@mixin montserrat400 {
+    font-family: -apple-system, "BlinkMacSystemFont", "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+@mixin montserrat500 {
+    font-family: -apple-system, "BlinkMacSystemFont", "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+@mixin montserrat600 {
+    font-family: -apple-system, "BlinkMacSystemFont", "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+@mixin ifhoverSupported {
+    @media not all and (hover: none), (-ms-high-contrast: none) {
+        @content;
+    }
+}

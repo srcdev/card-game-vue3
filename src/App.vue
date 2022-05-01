@@ -12,16 +12,15 @@
 <script lang="ts">
 import { defineComponent, defineAsyncComponent, ref } from "vue";
 import { useRootStore } from "@/stores/root";
-import pascalize from "@/helpers/pascalize";
+import { TRootState } from "@/models/store.root";
 import Loading from "@/components/base/loading/Loading.vue";
 
 export default defineComponent({
   components: { Loading },
   inheritAttrs: false,
-  props: {},
-  setup(props) {
-    const rootStore = useRootStore();
-    const locale = rootStore.locale as string;
+  setup() {
+    const rootStore = useRootStore() as unknown as TRootState;
+    const locale = rootStore.locale;
 
     const currentView = ref(rootStore.currentView);
 
@@ -41,6 +40,8 @@ export default defineComponent({
 
 html * {
   font-family: "Montserrat-Light", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // html {

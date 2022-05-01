@@ -1,0 +1,287 @@
+/*
+* Margin and padding
+**/
+
+$space1: 2;
+$space2: 4px;
+$space3: 6px;
+$space4: 8px;
+$space5: 10px;
+$space6: 12px;
+$space7: 14px;
+$space8: 16px;
+$space9: 18px;
+$space10: 20px;
+
+
+$aspect-16-9: 9px / 16px * 100%;
+$aspect-4-3: 3px / 4px * 100%;
+
+
+.margin {
+  &-top {
+    &-1 {
+      @include marginTop(1);
+    }
+    &-2 {
+      @include marginTop(2);
+    }
+    &-3 {
+      @include marginTop(3);
+    }
+    &-4 {
+      @include marginTop(4);
+    }
+    &-5 {
+      @include marginTop(5);
+    }
+    &-6 {
+      @include marginTop(6);
+    }
+    &-7 {
+      @include marginTop(7);
+    }
+    &-8 {
+      @include marginTop(8);
+    }
+    &-9 {
+      @include marginTop(9);
+    }
+    &-10 {
+      @include marginTop(10);
+    }
+  }
+
+  &-right {
+    &-1 {
+      @include marginRight(1);
+    }
+    &-2 {
+      @include marginRight(2);
+    }
+    &-3 {
+      @include marginRight(3);
+    }
+    &-4 {
+      @include marginRight(4);
+    }
+    &-5 {
+      @include marginRight(5);
+    }
+    &-6 {
+      @include marginRight(6);
+    }
+    &-7 {
+      @include marginRight(7);
+    }
+    &-8 {
+      @include marginRight(8);
+    }
+    &-9 {
+      @include marginRight(9);
+    }
+    &-10 {
+      @include marginRight(10);
+    }
+  }
+
+  &-bottom {
+    &-1 {
+      @include marginBottom(1);
+    }
+    &-2 {
+      @include marginBottom(2);
+    }
+    &-3 {
+      @include marginBottom(3);
+    }
+    &-4 {
+      @include marginBottom(4);
+    }
+    &-5 {
+      @include marginBottom(5);
+    }
+    &-6 {
+      @include marginBottom(6);
+    }
+    &-7 {
+      @include marginBottom(7);
+    }
+    &-8 {
+      @include marginBottom(8);
+    }
+    &-9 {
+      @include marginBottom(9);
+    }
+    &-10 {
+      @include marginBottom(10);
+    }
+  }
+
+  &-left {
+    &-1 {
+      @include marginLeft(1);
+    }
+    &-2 {
+      @include marginLeft(2);
+    }
+    &-3 {
+      @include marginLeft(3);
+    }
+    &-4 {
+      @include marginLeft(4);
+    }
+    &-5 {
+      @include marginLeft(5);
+    }
+    &-6 {
+      @include marginLeft(6);
+    }
+    &-7 {
+      @include marginLeft(7);
+    }
+    &-8 {
+      @include marginLeft(8);
+    }
+    &-9 {
+      @include marginLeft(9);
+    }
+    &-10 {
+      @include marginLeft(10);
+    }
+  }
+}
+
+.padding {
+  &-top {
+    &-1 {
+      @include paddingTop(1);
+    }
+    &-2 {
+      @include paddingTop(2);
+    }
+    &-3 {
+      @include paddingTop(3);
+    }
+    &-4 {
+      @include paddingTop(4);
+    }
+    &-5 {
+      @include paddingTop(5);
+    }
+    &-6 {
+      @include paddingTop(6);
+    }
+    &-7 {
+      @include paddingTop(7);
+    }
+    &-8 {
+      @include paddingTop(8);
+    }
+    &-9 {
+      @include paddingTop(9);
+    }
+    &-10 {
+      @include paddingTop(10);
+    }
+  }
+
+  &-right {
+    &-1 {
+      @include paddingRight(1);
+    }
+    &-2 {
+      @include paddingRight(2);
+    }
+    &-3 {
+      @include paddingRight(3);
+    }
+    &-4 {
+      @include paddingRight(4);
+    }
+    &-5 {
+      @include paddingRight(5);
+    }
+    &-6 {
+      @include paddingRight(6);
+    }
+    &-7 {
+      @include paddingRight(7);
+    }
+    &-8 {
+      @include paddingRight(8);
+    }
+    &-9 {
+      @include paddingRight(9);
+    }
+    &-10 {
+      @include paddingRight(10);
+    }
+  }
+
+  &-bottom {
+    &-1 {
+      @include paddingBottom(1);
+    }
+    &-2 {
+      @include paddingBottom(2);
+    }
+    &-3 {
+      @include paddingBottom(3);
+    }
+    &-4 {
+      @include paddingBottom(4);
+    }
+    &-5 {
+      @include paddingBottom(5);
+    }
+    &-6 {
+      @include paddingBottom(6);
+    }
+    &-7 {
+      @include paddingBottom(7);
+    }
+    &-8 {
+      @include paddingBottom(8);
+    }
+    &-9 {
+      @include paddingBottom(9);
+    }
+    &-10 {
+      @include paddingBottom(10);
+    }
+  }
+
+  &-left {
+    &-1 {
+      @include paddingLeft(1);
+    }
+    &-2 {
+      @include paddingLeft(2);
+    }
+    &-3 {
+      @include paddingLeft(3);
+    }
+    &-4 {
+      @include paddingLeft(4);
+    }
+    &-5 {
+      @include paddingLeft(5);
+    }
+    &-6 {
+      @include paddingLeft(6);
+    }
+    &-7 {
+      @include paddingLeft(7);
+    }
+    &-8 {
+      @include paddingLeft(8);
+    }
+    &-9 {
+      @include paddingLeft(9);
+    }
+    &-10 {
+      @include paddingLeft(10);
+    }
+  }
+}

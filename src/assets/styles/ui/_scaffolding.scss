@@ -1,0 +1,41 @@
+.sr-only {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 0;
+}
+
+.list {
+  list-style-type: none;
+  &.inline {
+    display: flex;
+  }
+  &.centered {
+    justify-content: center;
+  }
+  &-item {
+    margin: 0 12px;
+  }
+  &-link {
+    text-decoration: underline;
+  }
+}
+
+.dl-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 12px;
+  padding: 0;
+  .dt {
+    flex-basis: calc(100% - 50px);
+    flex-grow: 1;
+    padding: 4px 0;
+  }
+  .dd {
+    flex-basis: 50px;
+    padding: 4px 0;
+  }
+}
+
+

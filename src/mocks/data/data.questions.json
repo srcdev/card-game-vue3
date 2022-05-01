@@ -1,0 +1,98 @@
+[
+  {
+    "gameId": "4d6aca31-2cad-72ba-bf44-1804ff64d745",
+    "playerId": "2bae58e5-aace-74e8-e421-216e5c34b51a",
+    "playerName": "Chrome",
+    "activeSlot": 1,
+    "answerCount": 1,
+    "isWinner": false,
+    "question": {
+      "id": "5f464480237ef30c7ae77ffb",
+      "text": "Such a shame kids are getting into {0} nowadays"
+    },
+    "answer1": {
+      "id": null,
+      "text": ""
+    },
+    "answer2": {
+      "id": null,
+      "text": ""
+    },
+    "answer3": {
+      "id": null,
+      "text": ""
+    }
+  },
+  {
+    "gameId": "4d6aca31-2cad-72ba-bf44-1804ff64d745",
+    "playerId": "2bae58e5-aace-74e8-e421-216e5c34b51a",
+    "playerName": "Brave",
+    "activeSlot": 1,
+    "answerCount": 1,
+    "isWinner": true,
+    "question": {
+      "id": "5f464480237ef30c7ae77ffb",
+      "text": "Such a shame kids are getting into {0} nowadays"
+    },
+    "answer1": {
+      "id": null,
+      "text": ""
+    },
+    "answer2": {
+      "id": null,
+      "text": ""
+    },
+    "answer3": {
+      "id": null,
+      "text": ""
+    }
+  },
+  {
+    "gameId": "4d6aca31-2cad-72ba-bf44-1804ff64d745",
+    "playerId": "2bae58e5-aace-74e8-e421-216e5c34b51a",
+    "playerName": "Safari",
+    "activeSlot": 1,
+    "answerCount": 1,
+    "isWinner": false,
+    "question": {
+      "id": "5f464480237ef30c7ae77ffb",
+      "text": "Such a shame kids are getting into {0} nowadays"
+    },
+    "answer1": {
+      "id": null,
+      "text": ""
+    },
+    "answer2": {
+      "id": null,
+      "text": ""
+    },
+    "answer3": {
+      "id": null,
+      "text": ""
+    }
+  },
+  {
+    "gameId": "4d6aca31-2cad-72ba-bf44-1804ff64d745",
+    "playerId": "2bae58e5-aace-74e8-e421-216e5c34b51a",
+    "playerName": "Chrome",
+    "activeSlot": 1,
+    "answerCount": 1,
+    "isWinner": false,
+    "question": {
+      "id": "5f464480237ef30c7ae77ffb",
+      "text": "Such a shame kids are getting into {0} nowadays"
+    },
+    "answer1": {
+      "id": null,
+      "text": ""
+    },
+    "answer2": {
+      "id": null,
+      "text": ""
+    },
+    "answer3": {
+      "id": null,
+      "text": ""
+    }
+  }
+]

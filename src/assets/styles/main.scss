@@ -1,3 +1,23 @@
-@import "./imports.scss";
-@import "./base/fonts.scss";
-@import "./base/typography.scss";
+// global.scss
+// @import '@/assets/styles/partials/_theme_typography';
+@import "@/assets/styles/mixins/_breakpoints";
+@import '@/assets/styles/partials/_theme_colours';
+@import '@/assets/styles/partials/_theme_fonts';
+@import '@/assets/styles/ui/_icons';
+@import '@/assets/styles/ui/_scaffolding';
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  width: 100%;
+}

@@ -1,0 +1,13 @@
+/** =============================================================================
+*   Useage: Breakpoints for responsive layouts
+*   Useage:
+
+  @include breakpoint(360) {
+
+  }
+
+*/
+
+@mixin breakpoint($point) {
+  @media all and  (min-width: $point+px)  { @content; }
+}

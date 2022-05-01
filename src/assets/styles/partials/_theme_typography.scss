@@ -1,0 +1,45 @@
+/*
+* Default theme colours
+**/
+html * {
+    @include montserrat400;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+.header1,
+.header2,
+.header3,
+.header4,
+.header5,
+.header6 {
+    font-weight: bold;
+    margin-bottom: 12px;
+    &__light {
+        font-weight: normal;
+    }
+}
+
+.header1 {
+    font-size: 20px;
+    line-height: 32px;
+}
+.header2 {
+    font-size: 18px;
+    line-height: 40px;
+}
+.header3,
+.header4,
+.header5,
+.header6 {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+p, a, li, input, select, textarea, button {
+    font-size: 16px;
+    line-height: 28px;
+}

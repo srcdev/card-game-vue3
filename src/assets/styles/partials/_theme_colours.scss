@@ -1,0 +1,31 @@
+@import "@/assets/styles/variables/_colours";
+
+/*
+* Default theme colours
+**/
+body {
+    background-color: $page-bg-light;
+    transition: background-color linear 200ms;
+}
+h1, h2, h3, h4, h5, h6,
+p, a, li, input, select, textarea,
+dl,
+table,
+.form_label,
+.form-input_text {
+    color: $base-font-light;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $page-bg-dark;
+    }
+    h1, h2, h3, h4, h5, h6,
+    p, a, li, input, select, textarea,
+    dl,
+    table,
+    .form_label,
+    .form-input_text {
+        color: $base-font-dark;
+    }
+}
