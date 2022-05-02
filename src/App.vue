@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, defineAsyncComponent, ref, watch } from "vue";
+import { computed, defineComponent } from "vue";
 import gameDeck from "@/views/gameDeck.vue";
 import gameJoin from "@/views/gameJoin.vue";
 import gameNavigation from "@/components/base/navigation/gameNavigation.vue";

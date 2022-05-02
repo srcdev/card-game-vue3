@@ -11,23 +11,14 @@
   </nav>
 </template>
 
-<script lang="ts">
-import { computed, defineComponent, onBeforeMount, onMounted, reactive, ref, watch } from "vue";
+<script setup lang="ts">
 import { useRootStore } from "@/stores/root";
 
-export default defineComponent({
-  setup() {
-    const rootStore = useRootStore();
+const rootStore = useRootStore();
 
-    const setCurrentView = (view: string) => {
-      rootStore.setCurrentView(view);
-    };
-
-    return {
-      setCurrentView,
-    };
-  },
-});
+const setCurrentView = (view: string) => {
+  rootStore.setCurrentView(view);
+};
 </script>
 
 <style lang="scss">

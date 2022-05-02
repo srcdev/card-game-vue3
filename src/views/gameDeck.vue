@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onBeforeMount, onMounted, reactive, ref, watch } from "vue";
+import { computed, defineComponent, onMounted } from "vue";
 import { useGameStore } from "@/stores/game";
 
 export default defineComponent({

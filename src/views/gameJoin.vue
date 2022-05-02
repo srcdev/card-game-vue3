@@ -17,7 +17,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineComponent, onBeforeMount, onMounted, reactive, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import { IFormDataJoinGame } from "@/models/store.game";
 
@@ -29,7 +28,6 @@ const submitForm = () => {
   console.log(`Join Game --> submitForm`);
   console.log(formDataJoinGame);
 };
-
 </script>
 
 <style lang="scss">
