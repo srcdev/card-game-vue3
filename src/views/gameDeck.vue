@@ -12,36 +12,37 @@
   <div v-else>
     <p>Questions NOT loaded</p>
   </div>
+  <gameJoin></gameJoin>
 </template>
 
-<script lang="ts">
-import { computed, defineComponent, onMounted } from "vue";
+<script setup lang="ts">
+import { computed, onMounted } from "vue";
 import { useGameStore } from "@/stores/game";
+import gameJoin from "@/views/gameJoin.vue";
 
-export default defineComponent({
-  props: {},
-  setup(props) {
-    const gameStore = useGameStore();
-    const questions = computed(() => gameStore.questions);
-    const questionsCount = computed(() => gameStore.questionsCount);
-    const questionsLoaded = computed(() => gameStore.questionsLoaded);
-
-    const getQuestions = () => {
-      gameStore.getQuestions();
-    };
-
-    onMounted(() => {
-      if (!questionsLoaded.value) {
-        getQuestions();
-      }
-    });
-
-    return {
-      questions,
-      questionsCount,
-      questionsLoaded,
-    };
+const props = defineProps({
+  componentData: {
+    type: String,
+    default: null,
   },
+});
+
+const gameStore = useGameStore();
+const questions = computed(() => gameStore.questions);
+const questionsCount = computed(() => gameStore.questionsCount);
+const questionsLoaded = computed(() => gameStore.questionsLoaded);
+
+const componentData = props.componentData;
+console.log(`componentData --> ${componentData}`);
+
+const getQuestions = () => {
+  gameStore.getQuestions();
+};
+
+onMounted(() => {
+  if (!questionsLoaded.value) {
+    getQuestions();
+  }
 });
 </script>
 
