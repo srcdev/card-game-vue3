@@ -3,7 +3,7 @@
 $white: #fff;
 $black: #000;
 $darkGrey: #555;
-$greyGreyText: #313131;
+$darkGreyText: #313131;
 
 /*
 * Main colour scheme
@@ -57,10 +57,11 @@ $page-bg-dark: #2e2f30;
 $page-bg-light-rgba: rgba(255, 255, 255, 1);
 $page-bg-dark-rgba: rgba(46, 47, 48, 1);
 
-$base-font-light: $greyGreyText;
+$base-font-light: $darkGreyText;
 $base-font-dark: #f9f7f7;
-$border-light: $greyGreyText;
+$input-border-light: $darkGreyText;
 $border-dark: #f9f7f7;
+$icon-default: $color-grey-4;
 
 /*
 * Form colours
@@ -68,17 +69,18 @@ $border-dark: #f9f7f7;
 
 $btn-bg-error-dark: #271f1f;
 
-$input-text-light: $greyGreyText;
-$input-label-light: $greyGreyText;
+$input-text-light: $darkGreyText;
+$input-label-light: $darkGreyText;
 $form-text-error-light: $color-red-5;
 $input-label-error-light: $color-red-2;
 $input-placeholder-light: #a2a2a2;
 $input-placeholder-error-light: $black;
 $input-bg-light: $white;
+$input-bg-active-light: $color-grey-5;
 $input-radio-light: #a2a2a2;
 $input-radio-bg-light: $color-green-2;
 $input-bg-error-light: $color-red-4;
-$input-border-light: $greyGreyText;
+$input-border-light: $darkGreyText;
 $input-border-error-light: $color-red-6;
 $input-border-valid-light: $color-green-1;
 
@@ -102,7 +104,7 @@ $input-bg-disabled-dark: $color-grey-1;
 $input-border-disabled-dark: $color-grey-2;
 
 $input-border-error-dark: $color-red-6;
-$input-border-valid-dark: $color-green-7;
+$input-border-valid-dark: $color-green-2;
 
 /*
 * Deck colours

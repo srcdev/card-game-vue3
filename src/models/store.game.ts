@@ -46,5 +46,5 @@ export interface IGameQuestionsDTO {
 }
 
 export type IFormDataJoinGame = {
-  name?: string | undefined;
+  username?: string | undefined;
 };

@@ -1,0 +1,6 @@
+{
+  "counterBetweenMinAndMax": "ES: { count } of between { min } and { max }",
+  "counterNofMax": "ES: { count } of { max }",
+  "optionalText": "(ES: Optional)",
+  "requiredText": "(ES: Required)"
+}

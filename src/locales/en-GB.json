@@ -2,7 +2,12 @@
   "websiteTitle": "Fill In The Blanks Card Game",
   "joinGameTitle": "Join Game",
   "joinGameExplainer": "Before you joiong the game, please enter a name for the others to know who's playing",
-  "joinGameFormNameLabel": "Your name",
-  "joinGameFormNamePlaceholder": "eg: Norbert",
-  "joinGameFormSubmit": "Join game"
+  "joinGameFormUserNameLabel": "Your name",
+  "joinGameFormUserNamePlaceholder": "eg: Norbert",
+  "joinGameFormUserNameHint": "Example { example }",
+  "joinGameFormUserNameError": "",
+  "joinGameFormSubmit": "Join game",
+  "errors": {
+    "username": "A valid username is required"
+  }
 }

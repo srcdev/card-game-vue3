@@ -1,0 +1,42 @@
+{
+  "password": {
+    "pattern": "^(?=.*\\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\\w\\d\\s:])([^\\s]){8,16}$",
+    "minlength": 7,
+    "maxlength": 20,
+    "hint": "!Pa55word"
+  },
+  "emailaddress": {
+    "pattern": "^([^\\x00-\\x20\\x22\\x28\\x29\\x2c\\x2e\\x3a-\\x3c\\x3e\\x40\\x5b-\\x5d\\x7f-\\xff]+|\\x22([^\\x0d\\x22\\x5c\\x80-\\xff]|\\x5c[\\x00-\\x7f])*\\x22)(\\x2e([^\\x00-\\x20\\x22\\x28\\x29\\x2c\\x2e\\x3a-\\x3c\\x3e\\x40\\x5b-\\x5d\\x7f-\\xff]+|\\x22([^\\x0d\\x22\\x5c\\x80-\\xff]|\\x5c[\\x00-\\x7f])*\\x22))*\\x40([^\\x00-\\x20\\x22\\x28\\x29\\x2c\\x2e\\x3a-\\x3c\\x3e\\x40\\x5b-\\x5d\\x7f-\\xff]+|\\x5b([^\\x0d\\x5b-\\x5d\\x80-\\xff]|\\x5c[\\x00-\\x7f])*\\x5d)(\\x2e([^\\x00-\\x20\\x22\\x28\\x29\\x2c\\x2e\\x3a-\\x3c\\x3e\\x40\\x5b-\\x5d\\x7f-\\xff]+|\\x5b([^\\x0d\\x5b-\\x5d\\x80-\\xff]|\\x5c[\\x00-\\x7f])*\\x5d))*$",
+    "minlength": 7,
+    "maxlength": 255,
+    "hint": "you@email.com"
+  },
+  "comments": {
+    "pattern": "^[ A-Za-z0-9-_/!\"£$?@&^%#]*$",
+    "minlength": 0,
+    "maxlength": 255,
+    "hint": ""
+  },
+  "datetimelocal": {
+    "pattern": "^[ A-Za-z0-9-_/!\"£$?@&^%#]*$",
+    "minlength": 0,
+    "maxlength": 255,
+    "hint": ""
+  },
+  "shorttime": {
+    "pattern": "^[ A-Za-z0-9-_/!\"£$?@&^%#]*$",
+    "minlength": 0,
+    "maxlength": 12,
+    "hint": "",
+    "format": {
+      "hour": "2-digit",
+      "minute": "2-digit"
+    }
+  },
+  "alphaNumericTextField": {
+    "pattern": "^[a-zA-Z0-9 -_'\"]{0,255}",
+    "minlength": 0,
+    "maxlength": 255,
+    "hint": ""
+  }
+}

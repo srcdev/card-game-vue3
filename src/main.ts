@@ -11,7 +11,15 @@ pinia.use(piniaPluginPersistedstate);
 
 import "@/assets/styles/main.scss";
 
+// const i18n = createI18n({
+//   legacy: false, // you must set `false`, to use Composition API
+//   locale: "en-GB",
+//   fallbackLocale: "en-GB",
+//   messages: message,
+// });
+
 const i18n = createI18n({
+  legacy: false, // you must set `false`, to use Composition API
   locale: "en-GB",
   fallbackLocale: "en-GB",
   messages: message,
